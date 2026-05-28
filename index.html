@@ -40,28 +40,38 @@
     <main>
       <section>
         <div class="first-section">
-          <div class="right-div">
+          <div class="left-div">
             <h2>Medium length display headline</h2>
             <p>
               Separated they live in Bookmarks right at the coast of the famous
               Semantics, large language
             </p>
-            <div class="right-div-end">
+            <div class="left-div-end">
               <a class="ul-action" href="#">Action</a>
               <p>5,000 people like you have purchased this product!</p>
             </div>
           </div>
 
-          <div class="left-div">
-            <img
-              class="left-div-image"
-              src="./images/img.png"
-              alt="left-div-image"
-            />
+          <div class="right-div">
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/img1440.png"
+              />
+              <source media="(min-width:744px)" srcset="./images/img1024.png" />
+              <source media="(min-width:375px)" srcset="./images/img744.png" />
+              <img
+                class="right-div-image"
+                src="./images/img375.png"
+                alt="right-div-image"
+              />
+            </picture>
           </div>
         </div>
       </section>
 
+      <!--  -->
+      <!--  -->
       <section class="features-section">
         <div class="second-section">
           <div class="div1">
@@ -69,7 +79,7 @@
               <span class="black-circle"></span>
               <h3>Feature one</h3>
             </div>
-            <p>
+            <p class="lorem-ipsum">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Necessitatibus voluptatibus temporibus voluptate pariatur
               perspiciatis
@@ -80,7 +90,7 @@
               <span class="black-circle"></span>
               <h3>Feature one</h3>
             </div>
-            <p>
+            <p class="lorem-ipsum">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Necessitatibus voluptatibus temporibus voluptate pariatur
               perspiciatis
@@ -91,7 +101,7 @@
               <span class="black-circle"></span>
               <h3>Feature one</h3>
             </div>
-            <p>
+            <p class="lorem-ipsum">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Necessitatibus voluptatibus temporibus voluptate pariatur
               perspiciatis
@@ -100,46 +110,84 @@
         </div>
       </section>
 
+      <!--  -->
+      <!--  -->
+
       <section class="third-section">
         <div class="third-section-divs">
-          <div class="third-sec-right-div">
-            <img
-              class="third-sec-right-div-image"
-              src="./images/2img1440.jpg"
-              alt="3rd-sec-right-div-image"
-            />
-          </div>
           <div class="third-sec-left-div">
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/2img1440.jpg"
+              />
+              <source
+                media="(min-width:744px)"
+                srcset="./images/2img1024.png"
+              />
+              <source media="(min-width:375px)" srcset="./images/2img744.png" />
+              <img
+                class="third-sec-left-div-image"
+                src="./images/2img375.png"
+                alt="3rd-sec-left-div-image"
+              />
+            </picture>
+          </div>
+
+          <div class="third-sec-right-div">
             <h2>
               Long headline on two lines to turn your visitors into users and
               achieve more
             </h2>
-            <p class="p1-class">
-              Separated they live in Bookmarks right at the coast of the famous
-              Semantics, large language ocean
-            </p>
+            <div class="text-block">
+              <h3 class="p1-class">
+                Separated they live in Bookmarks right at the coast of the
+                famous Semantics, large language ocean
+              </h3>
 
-            <ul class="features-bullet-list">
-              <li>Showcase and embed your work with</li>
-              <li>Sell your videos worldwide</li>
-              <li>Publish across social channels in a click</li>
-              <li>Embed your work with</li>
-            </ul>
+              <h3 class="features-bullet-list li">
+                Showcase and embed your work with
+              </h3>
+              <h3 class="features-bullet-list li">
+                Sell your videos worldwide
+              </h3>
+              <h3 class="features-bullet-list li">
+                Publish across social channels in a click
+              </h3>
+              <h3 class="features-bullet-list li-last">Embed your work with</h3>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
         <div class="last-main-div">
-          <img
-            class="last-photo-bg"
-            src="./images/CTAImg-Wide-1440px+-New.jpg"
-            alt="bg-img"
-          />
-          <div class="text-on-img">
+          <picture>
+            <source
+              media="(min-width:1024px)"
+              srcset="./images/CTAImg-1440px.jpg"
+            />
+            <source
+              media="(min-width:744px)"
+              srcset="./images/CTAImg-1024px.jpg"
+            />
+            <source
+              media="(min-width:375px)"
+              srcset="./images/CTAImg-744px.jpg"
+            />
+            <img
+              class="last-photo-bg"
+              src="./images/CTAImg-375px.jpg"
+              alt="bg-img"
+            />
+          </picture>
+
+          <div>
+            <div class="text-on-img">
             <p>Tagline</p>
             <h2>Long headline to turn your visitors into users</h2>
             <a class="action-on-bg" href="#">Action</a>
+          </div>
           </div>
         </div>
       </section>
